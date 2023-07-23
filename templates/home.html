@@ -71,8 +71,10 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </p>
-      <h2 class="text-center mt-2 mb-4">Recent News</h2>
-      <p class="text-center">TODO - Show news here</p>
+      <h2 class="text-center mt-2 mb-4">Recent News/Open Positions</h2>
+
+      <div>{% for job in jobs %} {% include 'jobitem.html' %} {% endfor %}</div>
+
       <div class="text-center">
         <button class="btn btn-primary btn-lg">See the data!</button>
       </div>

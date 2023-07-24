@@ -15,52 +15,20 @@
         height: 250px;
         width: 100%;
         object-fit: cover;
+        margin-bottom: 16px;
+        margin-top: 56px;
       }
     </style>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Golf Data Title</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor01"
-          aria-controls="navbarColor01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarColor01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sheet</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Golfers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Custom Model</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    {% include 'nav.html' %}
+    <img
+      class="img-fluid"
+      id="banner"
+      src="http://127.0.0.1:5000/static/banner2.jpg"
+    />
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Golf Data Title</h1>
-      <img
-        class="img-fluid"
-        id="banner"
-        src="http://127.0.0.1:5000/static/banner2.jpg"
-      />
       <h2 class="text-center mt-2 mb-4">About Golf Data Site</h2>
       <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -79,5 +47,6 @@
         <button class="btn btn-primary btn-lg">See the data!</button>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>

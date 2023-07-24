@@ -14,6 +14,3 @@ def load_jobs_from_db():
         for row in result.all():
             jobs.append(row._asdict())
     return jobs
-
-
-print(load_jobs_from_db())
